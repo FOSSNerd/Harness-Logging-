@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Value Storage</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Value Storage</h1>
+		<label>Enter a value:</label>
+		<input type="number" id="value-input">
+		<button onclick="addEntry()">Add Entry</button>
+		<hr>
+		<label>Search for value:</label>
+		<input type="number" id="search-input">
+		<button onclick="searchEntry()">Search</button>
+		<hr>
+		<div id="entries"></div>
+		<div id="edit-entry" class="hidden">
+			<h2>Edit Entry</h2>
+			<label for="harness-input">Harness:</label>
+			<input type="text" id="harness-input">
+			<label for="login-input">Login:</label>
+			<input type="text" id="login-input">
+			<label for="date-input">Last Inspection Date:</label>
+			<input type="date" id="date-input">
+			<button onclick="saveEntry()">Save</button>
+			<button onclick="cancelEdit()">Cancel</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
